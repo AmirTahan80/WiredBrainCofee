@@ -29,16 +29,6 @@ namespace WiredBrainCofee.CustumrsApp.View
         {
             await _viewModel.LoadAsync();
         }
-        private void BtnMoveMenu_Click(object sender, RoutedEventArgs e)
-        {
-            var column = Grid.GetColumn(customerList);
-            var newColumn = column == 0 ? 2 : 0;
-            Grid.SetColumn(customerList, newColumn);
-        }
-        private void AddCustomer_Click(object sender, RoutedEventArgs e)
-        {
-            _viewModel.AddCustomer();
-        }
         #endregion
     }
 }
