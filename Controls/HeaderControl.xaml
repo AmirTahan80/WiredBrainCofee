@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="WiredBrainCofee.CustumrsApp.Controls.HeaderControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WiredBrainCofee.CustumrsApp.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#F05A28">
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <TextBlock FontSize="30" Foreground="White" Text="Customers App" VerticalAlignment="Center"/>
+            <TextBlock Text="Version 1.0" FontSize="16" Foreground="#333333" VerticalAlignment="Center" Margin="10 20  0 0"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
