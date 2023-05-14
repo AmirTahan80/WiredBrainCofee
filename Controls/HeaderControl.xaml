@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:WiredBrainCofee.CustumrsApp.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="#F05A28">
+    <Grid Background="{StaticResource HeaderBackGroundColor}">
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
             <Image Source="/Controls/WiredBrainCofee.png" Height="100"/>
             <TextBlock FontSize="30" Foreground="White" Text="Customers App" VerticalAlignment="Center"/>
