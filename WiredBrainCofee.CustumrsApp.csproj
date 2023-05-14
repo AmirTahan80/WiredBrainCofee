@@ -8,14 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Controls\WiredBrainCofee.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="Controls\WiredBrainCofee.png" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Data\Customers\Commands\" />
     <Folder Include="Data\Customers\Queries\" />
   </ItemGroup>
