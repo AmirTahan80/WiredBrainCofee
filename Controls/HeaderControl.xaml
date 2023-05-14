@@ -8,6 +8,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="#F05A28">
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <Image Source="/Controls/WiredBrainCofee.png" Height="100"/>
             <TextBlock FontSize="30" Foreground="White" Text="Customers App" VerticalAlignment="Center"/>
             <TextBlock Text="Version 1.0" FontSize="16" Foreground="#333333" VerticalAlignment="Center" Margin="10 20  0 0"/>
         </StackPanel>
