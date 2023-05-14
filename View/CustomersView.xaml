@@ -21,7 +21,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <StackPanel Grid.Row="0" Orientation="Horizontal">
-                <Button Margin="10" Width="75">
+                <Button Margin="10" Width="75" Click="AddCustomer_Click">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Add"/>
                     </StackPanel>
@@ -29,22 +29,23 @@
                 <Button Content="Delete" Width="75" Margin="0 10 10 10"/>
                 <Button Click="BtnMoveMenu_Click" Content="Move" Margin="0 10 10 10"/>
             </StackPanel>
-            <ListView x:Name="customerListView" Grid.Row="1" Margin="10 0 10 10">
-                <ListViewItem>Amir</ListViewItem>
-                <ListViewItem>Mmd</ListViewItem>
-                <ListViewItem>Ali</ListViewItem>
-            </ListView>
+            <ListView x:Name="customerListView" Grid.Row="1" Margin="10 0 10 10"
+                      ItemsSource="{Binding Path=Customers}"
+                      SelectedItem="{Binding SelectedCustomer, Mode=TwoWay}"
+                      DisplayMemberPath="FirstName"/>
         </Grid>
         <!--Customer List End-->
 
         <!--Customer Dtail-->
         <StackPanel Margin="10" Grid.Column="1">
             <Label>FirstName:</Label>
-            <TextBox Text="{Binding ElementName=customerListView,Path=SelectedItem.Content,
+            <TextBox Text="{Binding Path=SelectedCustomer.FirstName,
                 Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
             <Label>LastName:</Label>
-            <TextBox/>
-            <CheckBox Margin="10">
+            <TextBox Text="{Binding Path=SelectedCustomer.LastName,
+                Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+            <CheckBox Margin="10" IsChecked="{Binding Path=SelectedCustomer.IsDeveloper,
+                Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                 Is developer
             </CheckBox>
         </StackPanel>
