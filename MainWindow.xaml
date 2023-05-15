@@ -28,7 +28,7 @@
         <!--MAin Window-->
         <Menu FontSize="20">
             <MenuItem Header="_View">
-                <MenuItem Header="_Customers"
+                <MenuItem Header="_Managers"
                           Command="{Binding SelectViewModelCommand}"
                           CommandParameter="{Binding CustomerViewModel}"/>
                 <MenuItem Header="_Products"

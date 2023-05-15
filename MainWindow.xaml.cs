@@ -1,13 +1,8 @@
-﻿using System;
-using System.Windows;
-using WiredBrainCofee.CustumrsApp.Data.Customers;
+﻿using System.Windows;
 using WiredBrainCofee.CustumrsApp.ViewModels;
 
 namespace WiredBrainCofee.CustumrsApp
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         private readonly MainViewModel _viewMode;

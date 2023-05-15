@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBlock Text="Hello World!" FontSize="50" VerticalAlignment="Center"
-                   HorizontalAlignment="Center"/>
+        <DataGrid
+            ItemsSource="{Binding Products}"/>
     </Grid>
 </UserControl>
