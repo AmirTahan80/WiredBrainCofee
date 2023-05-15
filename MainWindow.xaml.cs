@@ -10,12 +10,13 @@ namespace WiredBrainCofee.CustumrsApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly mainViewModel _viewMode;
+        private readonly MainViewModel _viewMode;
 
         public MainWindow()
         {
             InitializeComponent();
-            _viewMode = new mainViewModel(new CustomerViewModel(new CustomerDataProvider()));
+            _viewMode = new MainViewModel(new CustomerViewModel(new CustomerDataProvider()),
+                new ProductViewModel());
             DataContext = _viewMode;
             Loaded += MainWindow_Loaded;
         }
