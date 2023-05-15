@@ -61,7 +61,7 @@ namespace WiredBrainCofee.CustumrsApp.ViewModels
         #endregion 
 
         #region Methods
-        internal async Task LoadAsync()
+        public async override Task LoadAsync()
         {
             if (Customers.Any())
                 return;
