@@ -4,12 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WiredBrainCofee.CustumrsApp" 
-        xmlns:controls="clr-namespace:WiredBrainCofee.CustumrsApp.Controls" xmlns:view="clr-namespace:WiredBrainCofee.CustumrsApp.View"
+        xmlns:controls="clr-namespace:WiredBrainCofee.CustumrsApp.Controls" 
+        xmlns:view="clr-namespace:WiredBrainCofee.CustumrsApp.View"
+        xmlns:viewModel="clr-namespace:WiredBrainCofee.CustumrsApp.ViewModels"
         mc:Ignorable="d"
         d:DesignWidth="700" d:DesignHeight="600"
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
-        <DataTemplate x:Key="CustomerTemplateViewModel">
+        <DataTemplate DataType="{x:Type viewModel:CustomerViewModel}">
             <view:CustomersView/>
         </DataTemplate>
     </Window.Resources>
@@ -31,8 +33,7 @@
 
         <controls:HeaderControl Grid.Row="1"/>
 
-        <ContentControl Grid.Row="2" Content="{Binding SelectedViewModel}"
-                        ContentTemplate="{StaticResource CustomerTemplateViewModel}"/>
+        <ContentControl Grid.Row="2" Content="{Binding SelectedViewModel}"/>
         <!--Status Bar-->
         <StatusBar Grid.Row="3">
             <StatusBarItem FontSize="20" Content="(c) Wired Brain Coffee"/>
