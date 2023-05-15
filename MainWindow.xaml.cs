@@ -12,11 +12,10 @@ namespace WiredBrainCofee.CustumrsApp
     {
         private readonly MainViewModel _viewMode;
 
-        public MainWindow()
+        public MainWindow(MainViewModel viewModel)
         {
             InitializeComponent();
-            _viewMode = new MainViewModel(new CustomerViewModel(new CustomerDataProvider()),
-                new ProductViewModel());
+            _viewMode = viewModel;
             DataContext = _viewMode;
             Loaded += MainWindow_Loaded;
         }
