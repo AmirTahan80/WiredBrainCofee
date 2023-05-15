@@ -2,7 +2,7 @@
   <img src="https://user-images.githubusercontent.com/54862167/64559227-0abc8380-d303-11e9-999e-ccb9e86cf236.png" alt="WiredBrainCoffee" width="300">
 </p>
 
-<h1> 👨‍💼 WiredBrainCoffee ☕ </h1>
+<h1>WiredBrainCoffee ☕ </h1>
 
 
 # 👋 Introduction:
